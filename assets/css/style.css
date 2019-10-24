@@ -1,0 +1,34 @@
+/* *{
+    border: 1px solid black;
+} */
+#header{
+    background-color: #0C2434;
+    padding: 40px 0;
+}
+#logo{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+
+}
+#registrationInfo{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+#registrationInfo h1{
+    color: rgba(103, 103, 103, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 57px;
+}
+#blueBgImg{
+    position: absolute;
+}
+#reg-card{
+    float: right;
+}
+#reg-card input{
+    width: 80%;
+    margin: 0 auto;
+}
