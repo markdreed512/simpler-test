@@ -1,8 +1,10 @@
 /* *{
     border: 1px solid black;
 } */
+
 body{
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 #header{
     background-color: #0C2434;
