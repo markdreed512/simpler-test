@@ -1,0 +1,48 @@
+/* *{
+    border: 1px solid black;
+} */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#header{
+    background-color: #0C2434;
+    padding: 60px 0;
+}
+#logo{
+    width: 443px;
+    display: block;
+    margin: 0 auto;
+
+}
+#registrationInfo{
+    width: 63%;
+    margin: 0 auto;
+    
+}
+#registrationInfo h1{
+    margin-top: 120px;
+    color: rgb(103, 103, 103);
+    font-weight: 800;
+    font-size: 57px;
+}
+#blueBgImg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+#reg-card{
+    float: right;
+    width: 23vw;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 4px gray;
+}
+#reg-card input{
+    width: 80%;
+    margin: 20px auto;
+    height: 50px;
+}
+#subTitle{
+    font-style: italic;
+    font-size: 42px;
+}
