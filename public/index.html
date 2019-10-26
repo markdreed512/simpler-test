@@ -16,10 +16,14 @@
 
 
     <div class="wrapper">
-        <div class="header"><img id="logo" src="assets/images/logo@2x.png" alt="simpler logo"></div>
+        <div class="header">
+            <div class="logo-container col-md-4">
+                <img id="logo" src="assets/images/logo@2x.png" alt="simpler logo">
+            </div>
+        </div>
         <div class="container-fluid main">
-            <div class="row top-row">
-                <div class="top-box col-md-5">
+            <div class="row top-row  py-md-5">
+                <div class="top-box col-md-8 col-lg-5">
                     <!-- <img id="bgImg" src="assets/images/bg.png" alt="blue swirly background"> -->
                     <h1 id="title">Bruce Marshall's Private Options Income Mentorship</h1>
                     <p id="subtitle">Consistent Options Income in Almost Any Market Condition</p>
@@ -27,14 +31,14 @@
                     <p id="date"><span id="calendar"><img src="assets/images/calendar.svg" alt=""></span> Friday,January
                         4th,2019 at 3:15PM CT</p>
                 </div>
-                <div id="reg-card" class="card col-md-4">
+                <div id="reg-card" class="card col-md-8 col-lg-4">
                     <div class="card-body">
                         <h5 class="card-title"><b>FREE LIVE WEBCAST</b></h5>
                         <p id="card-subtitle">Friday,January 4th,2019 at 3:15PM CT</p>
                     </div>
                     <form>
                         <div class="form-group">
-                            <input type="name" class="form-control" id="nameInput" placeholder="NAME" >
+                            <input type="name" class="form-control" id="nameInput" placeholder="NAME">
                             <input type="email" class="form-control" id="emailInput" placeholder="EMAIL ADDRESS">
                         </div>
 
@@ -43,46 +47,52 @@
                     <p id="motto">Don't miss out!</p>
                 </div>
             </div>
-
-
         </div>
+        <div class="container-fluid">
+            <div class="row bottom-area py-5 px-5 mx-auto">
+                <div class="bottom-area-title">
+                    <h1 id="bottom-title">Join Bruce Marshall, Director of Options and Income Trading</h1>
+                </div>
+            </div>
+        </div>
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <script>
             function getQueryVariable(variable) {
-                
-                    var query = window.location.search.substring(1);
-                    var vars = query.split("&");
-                  
-                    for (var i = 0; i < vars.length; i++) {
-                        var pair = vars[i].split("=");
-                        if (pair[0] !== ""){
-                            if (pair[0] == variable) { return pair[1]; }
-                        }
-                        else{
-                            return false
-                        } 
-                    } 
+
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] !== "") {
+                        if (pair[0] == variable) { return pair[1]; }
+                    }
+                    else {
+                        return false
+                    }
+                }
             }
             name = getQueryVariable('name')
             email = getQueryVariable('email')
-            
-            if (name === false){
+
+            if (name === false) {
                 $('#nameInput').val("")
-            }else{
+            } else {
                 console.log("here: ", name)
                 $('#nameInput').val(name)
             }
-            if (email === false){
+            if (email === false) {
                 $('#emailInput').val("")
-            }else{
+            } else {
                 $('#emailInput').val(email)
             }
-            
-           
-            
-            
+
+
+
+
 // var urlParams = new URLSearchParams(window.location.search);
 // console.log("this: ", urlParams.get('name'))</script>
     </div>
