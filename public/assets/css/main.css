@@ -114,7 +114,7 @@ body {
   /* Firefox */
 }
 
-.main #reg-card button {
+.main #reg-card .form-submit-btn {
   width: 80%;
   height: 50px;
   background: transparent -webkit-gradient(linear, left top, left bottom, from(#FCC57B), to(#D98624)) 0% 0% no-repeat padding-box;
@@ -125,6 +125,7 @@ body {
   margin-bottom: 20px;
   font-size: 1.3rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .main #reg-card #motto {

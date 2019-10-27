@@ -91,7 +91,7 @@ body{
             color: rgb(187, 183, 183);
             opacity: 1; /* Firefox */
           }
-        button{
+          .form-submit-btn{
             width: 80%;
             height: 50px;
             background: transparent linear-gradient(180deg, #FCC57B 0%, #D98624 100%) 0% 0% no-repeat padding-box;
@@ -101,6 +101,7 @@ body{
             margin-bottom: 20px;
             font-size: 1.3rem;
             font-weight:700;
+            cursor: pointer;
         }
         #motto{
             font-style: italic;

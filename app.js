@@ -7,7 +7,7 @@ app.use(express.static('public'))
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, '/public', 'index.html'));
 })
-app.get('/:words', function(req, ses){
+app.get('/:url', function(req, ses){
     console.log(req.params.words)
 })
 
