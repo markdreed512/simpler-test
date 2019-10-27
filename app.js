@@ -1,18 +1,21 @@
-const express = require('express');
-const path = require('path');
-const app = express();
+function getQueryVariable(key) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0].toLowerCase() === key) {
+            return pair[1];
+        }
+    }
+    return false;
+}
 
-app.use(express.static('public'))
 
-app.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, '/public', 'index.html'));
-})
-app.get('/:url', function(req, ses){
-    console.log(req.params.words)
-})
-
-
-app.listen(3000, function(){
-    console.log("listening on port 3000!!")
-})
-
+var firstname = getQueryVariable('name');
+var email = getQueryVariable('email');
+if (firstname) {
+    $('#nameInput').val(firstname);
+}
+if (email) {
+    $('#emailInput').val(email);
+}
