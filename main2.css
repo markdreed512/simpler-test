@@ -19,7 +19,13 @@ width: 80%;
 display: block;
 margin:0 auto;
 }
-
+/* .main{
+    border: 1px solid red;
+} */
+.centered-main{
+    margin-left:0;
+    margin-right:0;
+}
 #title-area h1{
     font-size: 1.8rem;
     font-weight: 800;
@@ -91,7 +97,6 @@ display: block;
 #will-include-list li{
     list-style: none;
 }
-
 #bonus-row img{
     width: 10vw;
     position:relative;
@@ -100,4 +105,20 @@ display: block;
 }
 #bonus-row p{
     margin-top: -20px;
+}
+.footer{
+    background-color: #0C2434;
+}
+.footer #footer-logo {
+    width: 24%;
+    display: block;
+}
+.footer .vl {
+    border-left: 2px solid rgb(229, 236, 229);
+    height: 30px;
+    display: inline-block;
+    margin-top: -6px;
+  }
+.footer span{
+    color: white;
 }
