@@ -46,8 +46,10 @@ body{
         height: 100%;
         #title{
             font-weight: 800;
-            font-size: 3rem;
+            font-size: 2.6rem;
             padding-top: 40px;
+            padding-left: 30px;
+            text-align: left;
         }
         #subtitle{
            font-style: italic;
@@ -108,10 +110,25 @@ body{
     
     
 }
-.bottom-area-title {
-    text-align: center;
-    #bottom-title{
-    // margin: 50px auto 0 auto;
-    
+.bottom-half{
+    .bottom-area{
+        text-align: left;
+        #bottom-title{
+            line-height:1.2;
+            font-size:3.5rem;
+        }
     }
+    .bruce-area{
+        #bruce{
+            width: 40%;
+        }
+        .bruce-p{
+            font-size: 1.5rem;
+            text-align: left;
+        }
+    }
+}
+
+.font-weight-light{
+    font-weight: 100 !important;
 }

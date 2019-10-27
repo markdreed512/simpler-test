@@ -38,8 +38,10 @@ body {
 
 .main .top-box #title {
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2.6rem;
   padding-top: 40px;
+  padding-left: 30px;
+  text-align: left;
 }
 
 .main .top-box #subtitle {
@@ -130,7 +132,25 @@ body {
   color: #676767;
 }
 
-.bottom-area-title {
-  text-align: center;
+.bottom-half .bottom-area {
+  text-align: left;
+}
+
+.bottom-half .bottom-area #bottom-title {
+  line-height: 1.2;
+  font-size: 3.5rem;
+}
+
+.bottom-half .bruce-area #bruce {
+  width: 40%;
+}
+
+.bottom-half .bruce-area .bruce-p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.font-weight-light {
+  font-weight: 100 !important;
 }
 /*# sourceMappingURL=main.css.map */
