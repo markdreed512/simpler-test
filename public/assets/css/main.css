@@ -1,9 +1,9 @@
 body {
   color: #676767;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
 }
 
 .header {
@@ -13,10 +13,15 @@ body {
 
 .header .logo-container {
   margin: 0 auto;
+  padding: 0;
 }
 
 .header #logo {
   width: 80%;
+}
+
+.outer {
+  margin: 0;
 }
 
 .main {
@@ -139,15 +144,27 @@ body {
 
 .bottom-half .bottom-area #bottom-title {
   line-height: 1.2;
-  font-size: 3.5rem;
-}
-
-.bottom-half .bruce-area #bruce {
-  width: 40%;
+  font-size: 3.2rem;
 }
 
 .bottom-half .bruce-area .bruce-p {
   font-size: 1.5rem;
+  text-align: left;
+}
+
+.bottom-half .will-include-area .line {
+  width: 22%;
+  height: 0;
+  border-bottom: 1px solid #C4C4C4;
+  margin: 3px;
+  display: inline-block;
+}
+
+.bottom-half .will-include-area .include-head span {
+  font-style: italic;
+}
+
+.bottom-half .will-include-area .include-list li {
   text-align: left;
 }
 

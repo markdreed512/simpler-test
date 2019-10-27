@@ -3,10 +3,9 @@ $fontGrey: #676767;
 body{
     color: $fontGrey;
     // background-color: grey;
-    text-align: center;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
-
+    text-align:center;
 }
 // .wrapper{
 //     display: grid;
@@ -17,11 +16,15 @@ body{
     padding: 40px 0;
     .logo-container{
         margin: 0 auto;
+        padding:0;
     }
     #logo{
         width: 80%;
     
     }
+}
+.outer{
+    margin: 0;
 }
 .main{
     height: 100%;
@@ -116,15 +119,29 @@ body{
         text-align: left;
         #bottom-title{
             line-height:1.2;
-            font-size:3.5rem;
+            font-size:3.2rem;
         }
     }
     .bruce-area{
-        #bruce{
-            width: 40%;
-        }
         .bruce-p{
             font-size: 1.5rem;
+            text-align: left;
+        }
+    }
+    .will-include-area{
+        .line{
+            width: 22%;
+            height: 0;
+            border-bottom: 1px solid #C4C4C4;
+            margin: 3px;
+            display:inline-block;
+        }
+        .include-head{
+            span{
+                font-style: italic;
+            }
+        }
+        .include-list li{
             text-align: left;
         }
     }

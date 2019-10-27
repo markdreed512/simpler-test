@@ -1,0 +1,17 @@
+*{
+    border: 1px solid green;
+}
+
+.header {
+    background-color: #0C2434;
+    padding: 40px 0;
+  }
+  
+  .header .logo-container {
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .header #logo {
+    width: 80%;
+  }
