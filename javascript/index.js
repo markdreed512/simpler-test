@@ -13,6 +13,7 @@ function getQueryVariable(key) {
 
 var firstname = getQueryVariable('name');
 var email = getQueryVariable('email');
+
 if (firstname) {
     $('#nameInput').val(firstname);
 }

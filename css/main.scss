@@ -144,6 +144,12 @@ body,h1,h2,h3,h4,h5,h6,p{
         margin-bottom: 20px;
         font-size: 1.1rem;
         font-weight: 700;
+        @include tablet{
+            font-size: 1.9rem;
+        }
+        @include desktop{
+            font-size: 1.9rem;
+        }
       }
       #motto{
         color:#676767;
