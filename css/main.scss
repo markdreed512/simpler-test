@@ -1,0 +1,313 @@
+$fontGrey: #676767;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+// *{
+//     border: 1px solid red;
+// }
+body,h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+.header {
+    background-color: #0C2434;
+    padding: 40px 0;
+    .logo-container {
+        margin: 0 auto;
+        padding: 0;
+        }
+    #logo {
+        width: 80%;
+        display: block;
+        margin:0 auto;
+        }
+  }
+.main {
+    #bgImg{
+        position: absolute;
+        width:100%;
+        height: 700px;
+        // @include tablet{
+        //     height:700px;
+        // }
+        @include desktop {
+            height:550px;  
+            }
+    }
+    #centered-main{
+        margin-left:0;
+        margin-right:0;
+        
+        #top-row{
+            @include tablet {
+                padding-top: 80px;
+              }
+            @include desktop {
+                padding-top: 80px;
+            }
+            #title-area{
+                h1{
+                    color: $fontGrey;
+                    font-size: 3rem;
+                    font-weight: 800;
+                    @include tablet{
+                        font-size: 4rem;
+                    }
+                    @include desktop{
+                        font-size: 4rem;
+    
+                    }
+                }
+                
+                #subtitle{
+                    font-style: italic;
+                    font-size: 2.4rem;
+                    color: #676767;
+                    @include tablet{
+                        font-size: 3rem;
+                    }
+                    @include desktop{
+                        font-size: 3rem;
+    
+                    }
+                }
+                hr{
+                    border-color: rgb(70, 69, 69);
+                }
+                #date{
+                    padding-left:7px;
+                    font-size: 1.5rem;
+                }
+                #calendar{
+                    width: 7%;
+                }
+            
+            } 
+        }
+    }
+
+    
+}
+
+
+#reg-card{
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    @include desktop{
+        margin-left:10px;
+    }
+    h5{
+        font-weight: 800;
+        color: #676767;
+    }
+    #card-subtitle{
+        font-size:1.5rem;
+    }
+    input{
+        width: 92%;
+        height: 50px;
+        color: rgb(12, 11, 11); 
+        margin-bottom: 20px;
+        border-radius:4px;
+    }
+    ::placeholder { 
+        color: rgb(187, 183, 183);
+        opacity: 1; 
+    }
+    .form-submit-btn {
+        width: 80%;
+        height: 50px;
+        background: transparent -webkit-gradient(linear, left top, left bottom, from(#FCC57B), to(#D98624)) 0% 0% no-repeat padding-box;
+        background: transparent linear-gradient(180deg, #FCC57B 0%, #D98624 100%) 0% 0% no-repeat padding-box;
+        border: 1px solid #D8A124;
+        border-radius: 20px;
+        opacity: 1;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+      #motto{
+        color:#676767;
+        font-style: italic;
+    }
+}
+#bruce-info{
+    @include tablet{
+        padding-top:130px;
+    }
+    @include desktop{
+        padding-top:130px;
+
+    }
+    
+    #join{
+        font-family: 'Open Sans', sans-serif;
+        font-weight:300;
+        font-size:3rem;
+        color:$fontGrey;
+        @include tablet{
+            font-size:5rem;
+            line-height: 6rem;
+        }
+        @include desktop{
+            line-height: 6rem;
+            font-size:5.1rem;
+        } 
+    }
+    #paragraphs{
+        margin-top:20px;
+        text-align: justify;
+        
+        @include tablet{
+            font-size:1.8rem;
+            text-align: left;
+            line-height: 3.5rem;
+        }
+        @include desktop{
+            font-size:1.8rem;
+            text-align: left;
+            line-height: 3.5rem;
+        } 
+    }img{
+        display: block;
+        @include tablet{
+            float:right;
+            width:450px;
+        }
+        @include desktop{
+            float:right;
+            width:450px;
+    
+        } 
+    }
+    #will-include-area{
+        clear:both;
+        
+    }
+    #will-include-line {
+        width:100%;
+        font-size: 20px;
+        @include tablet{
+            margin-top: 0px
+        }
+        @include desktop{
+            padding-top: 0px
+        }
+        .line {
+            width:60%;
+            height: 1;
+            border-top: 1px solid rgb(141, 135, 135);
+            margin: 3px;
+            display: inline-block;
+          }
+        span{
+            color: $fontGrey;
+            font-size: 1rem;
+            font-style: italic;
+            @include tablet{
+                font-size: 1.6rem;
+                margin-right:20px;
+                margin-left:20px;
+            }
+            @include desktop{
+                font-size: 1.6rem;
+                margin-right:20px;
+                margin-left:20px;
+            }
+            
+        }
+    }
+}
+#will-include-list{
+    li{
+        list-style: none;
+        color: $fontGrey;
+        @include tablet{
+            line-height: 5rem;
+            font-size: 1.8rem;
+            font-weight:300;
+        }
+        @include desktop{
+            line-height: 5rem;
+            font-size: 1.8rem;
+            font-weight:300;
+        }
+        
+        
+    }
+} 
+#bonus-row {
+    img{
+        width: 10vw;
+        position:relative;
+        top:-20px;
+        left: -30px;
+        @include tablet{
+            width:40px;
+        }
+        @include desktop{
+            width:40px;
+        }
+    }
+    p{
+        margin-top: -20px;
+        font-size:1.6rem;
+        font-weight:800;
+        color: $fontGrey;
+        @include tablet{
+            padding-top:0px;
+            padding-bottom:5px;
+        }
+        @include desktop{
+            padding-top:0px;
+            padding-bottom:10px;
+        }
+    }
+} 
+.footer{
+    background-color: #0C2434;
+    .vl {
+        border-left: 2px solid rgb(229, 236, 229);
+        display: inline-block;
+        height: 10px;
+        margin-top:4px;
+        @include tablet{
+            height: 40px;
+            margin-top: -6px;
+        }
+        @include desktop{
+            height: 40px;
+            margin-top: -6px;
+        }
+        
+    }
+    img{
+        width: 100%;
+    }
+    a{
+        font-size:1vw;
+    }
+    span{
+        color: white;
+        font-size:1vw;
+    }
+}
